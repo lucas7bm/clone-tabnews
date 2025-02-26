@@ -14,4 +14,6 @@ async function query(queryObject) {
   return result;
 }
 
-export default { query: query };
+async function databaseInfo() {}
+
+export default { query: query, databaseInfo: databaseInfo };
