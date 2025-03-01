@@ -1,3 +1,4 @@
+//fix-migrations-endpoint branch
 import migrationRunner from "node-pg-migrate";
 import { join } from "node:path";
 import database from "infra/database.js";
