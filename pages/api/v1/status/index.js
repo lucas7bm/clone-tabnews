@@ -1,6 +1,6 @@
 import database from "infra/database.js";
 
-async function status(request, response) {
+export default async function status(request, response) {
   const serverVersion = (await database.query("SHOW server_version;")).rows[0]
     .server_version;
   const maxConnections = parseInt(
@@ -26,5 +26,3 @@ async function status(request, response) {
     },
   });
 }
-
-export default status;
